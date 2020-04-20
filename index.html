@@ -14,24 +14,39 @@
     <div class="header">
       <h1>簡単シーザー暗号</h1>
     </div>
-    <form name="form">
-      <textarea name="plaintext" rows="4" cols="40">暗号化させたい文章</textarea>
-      <select name="key">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
-      <textarea name="ciphertext" rows="4" cols="40">暗号文</textarea>
-      <input type="button" name="change" value="暗号化">
-      <input type="button" name="change2" value="復号化">
-      <input type="button" name="button" value="ボタン">
-    </form>
+    <div class="form">
+      <form name="form">
+        <div class="main">
+          <div class="plaintext">
+            <h2>平文</h2>
+            <textarea name="plaintext" rows="4" cols="40">暗号化させたい文章</textarea>
+          </div>
+          <div class="key">
+            <h3>key</h3>
+            <select name="key">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="ciphertext">
+            <h2>暗号文</h2>
+            <textarea name="ciphertext" rows="4" cols="40">暗号文</textarea>
+          </div>
+        </div>
+        <div class="button_box">
+          <input type="button" name="change" value="暗号化" class="button">
+          <input type="button" name="change2" value="復号化" class="button">
+          <input type="button" name="button" value="ボタン" class="button">
+        </div>
+      </form>
+    </div>
   </body>
 </html>
