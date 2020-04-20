@@ -5,6 +5,8 @@ $( () => {
   const key = form.key;
   const change = form.change;
   const change2 = form.change2;
+  const button = form.button;
+  const body = document.body;
   console.log(key);
 
   change.addEventListener("click", ()=>{//暗号化
@@ -12,6 +14,9 @@ $( () => {
   });
   change2.addEventListener("click", ()=>{//復号化
     plaintext.value = decryption(ciphertext.value, key.value);
+  });
+  button.addEventListener("click", ()=>{
+    $(body).addClass("pink");
   });
 
   function cipher(string, key){
