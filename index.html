@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div class="header">
       <h1>簡単シーザー暗号</h1>
     </div>
-    <form>
+    <form name="form">
       <textarea name="plaintext" rows="4" cols="40">暗号化させたい文章</textarea>
       <select name="key">
         <option value="1">1</option>
@@ -24,8 +29,9 @@
         <option value="10">10</option>
       </select>
       <textarea name="ciphertext" rows="4" cols="40">暗号文</textarea>
-
-
+      <input type="button" name="change" value="暗号化">
+      <input type="button" name="change2" value="復号化">
+      <input type="button" name="button" value="ボタン">
     </form>
   </body>
 </html>
